@@ -1,3 +1,9 @@
 [submodule "lib/d3"]
 	path = lib/d3
 	url = https://github.com/mbostock/d3.git
+[submodule "convnetjs"]
+	path = lib/convnetjs
+	url = https://github.com/karpathy/convnetjs.git
+[submodule "reinforcejs"]
+	path = lib/reinforcejs
+	url = https://github.com/karpathy/reinforcejs.git
