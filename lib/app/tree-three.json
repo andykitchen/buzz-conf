@@ -1,0 +1,9 @@
+{
+ "id": 1,
+ "name": "Attractive",
+ "children": [
+  {"id": 2, "name": "Smart", "link_color": "gray"},
+  {"id": 3, "name": "Funny", "link_color": "gray"},
+  {"id": 4, "name": "Smells Bad", "link_color": "gray"}
+ ]
+}
