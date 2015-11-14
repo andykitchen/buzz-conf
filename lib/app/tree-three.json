@@ -1,9 +1,9 @@
 {
  "id": 1,
- "name": "Attractive",
+ "name": "Cat",
  "children": [
-  {"id": 2, "name": "Smart", "link_color": "gray"},
-  {"id": 3, "name": "Funny", "link_color": "gray"},
-  {"id": 4, "name": "Smells Bad", "link_color": "gray"}
+  {"id": 2, "name": "Pointy Ears", "link_color": "gray"},
+  {"id": 3, "name": "Button Nose", "link_color": "gray"},
+  {"id": 4, "name": "Slobber", "link_color": "gray"}
  ]
 }
