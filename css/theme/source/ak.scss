@@ -36,6 +36,18 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'work_sanslight';
+    src: url('../fonts/worksans-light-webfont.eot');
+    src: url('../fonts/worksans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/worksans-light-webfont.woff2') format('woff2'),
+         url('../fonts/worksans-light-webfont.woff') format('woff'),
+         url('../fonts/worksans-light-webfont.ttf') format('truetype'),
+         url('worksans-light-webfont.svg#work_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'work_sansregular';
     src: url('../fonts/worksans-regular-webfont.eot');
     src: url('../fonts/worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -81,7 +93,7 @@
 }
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'work_sansextralight', sans-serif;
+$mainFont: 'work_sanslight', sans-serif;
 $mainFontSize: 48px;
 $headingFont: 'roboto_slabbold', serif;
 $headingFontWeight: 700;

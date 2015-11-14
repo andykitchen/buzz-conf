@@ -17,6 +17,13 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'work_sanslight';
+  src: url("../fonts/worksans-light-webfont.eot");
+  src: url("../fonts/worksans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/worksans-light-webfont.woff2") format("woff2"), url("../fonts/worksans-light-webfont.woff") format("woff"), url("../fonts/worksans-light-webfont.ttf") format("truetype"), url("worksans-light-webfont.svg#work_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'work_sansregular';
   src: url("../fonts/worksans-regular-webfont.eot");
   src: url("../fonts/worksans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/worksans-regular-webfont.woff2") format("woff2"), url("../fonts/worksans-regular-webfont.woff") format("woff"), url("../fonts/worksans-regular-webfont.ttf") format("truetype"), url("../fonts/worksans-regular-webfont.svg#work_sansregular") format("svg");
@@ -58,7 +65,7 @@ body {
   background-color: #b9c0c6; }
 
 .reveal {
-  font-family: "work_sansextralight", sans-serif;
+  font-family: "work_sanslight", sans-serif;
   font-size: 48px;
   font-weight: normal;
   color: #333; }
