@@ -46,6 +46,14 @@
         text-shadow: 3px 3px 5px black;
       }
 
+      .circle {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background: black;
+        display: inline-block;
+      }
+
       iframe.full-page {
         max-width: 100% !important;
         max-height: 100% !important;
@@ -65,8 +73,41 @@
 
       <section>
         <section>
+          <h1>7 Reasons</h1>
+          <p>why you are just a meat computer</p>
+          <p class="fragment">...and that's ok</p>
+        </section>
+        <section>
+          Also, there aren't actually 7-reasons in this talk, so don't bother trying to count in your head. 
+        </section>
+      </section>
+
+      <section>
+        <section>
+          Any sufficiently advanced technology is indistinguishable from magic.
+        </section>
+        <section>
+          Cutting edge technology is just <br> <i>(a little bit)</i> magical.
+        </section>
+      </section>
+
+      <section>
+        <h1>The Pledge</h1>
+      </section>
+
+      <section>
+        <section>
           <h1>Information</h1>
         </section>
+        <section>
+          <h1>Entropy</h1>
+        </section>
+        <section>
+          <h1>Numbers</h1>
+        </section>
+      </section>
+
+      <section>
         <section>
           Statistics is about noise
         </section>
@@ -74,32 +115,16 @@
           Machine Learning is about structure
         </section>
         <section>
-          AI is about consciousness
-        </section>
-      </section>
-
-      <section>
-        <section>
-          Information is crystlized entropy
-        </section>
-      </section>
-
-      <section>
-        The Leviathan
-      </section>
-
-      <section>
-        <section>
           The problem with structure...
         </section>
         <section>
-          You know it when you see it.
+          You only know it when you see it.
         </section>
       </section>
 
       <section>
         <section>
-          The Neuron          
+          <h1>The Neuron</h1>
         </section>
         <section>
           <div id="tree" data-src="lib/app/tree-one.json"></div>
@@ -112,27 +137,124 @@
       </section>
 
       <section>
+        <section>
+          <h1 class="left">Pattern<br>Recognition</h1>
+        </section>
+        <section>
+          Patterns are crystalised information
+        </section>
+        <section>
+          A gap between possible entropy <br> and realised entropy
+        </section>
+
+        <section>
+          <div class="circle" id="independent1"></div>
+          <div class="circle" id="independent2"></div>
+          <script type="text/javascript">
+            setInterval(function() {
+              var circle1 = document.getElementById("independent1")
+              var circle2 = document.getElementById("independent2")
+
+              circle1.style.opacity = Math.random() > 0.5 ? 1.0 : 0.0;
+              circle2.style.opacity = Math.random() > 0.5 ? 1.0 : 0.0;
+            }, 200);
+          </script>
+        </section>
+
+        <section>
+          <div class="circle" id="together1"></div>
+          <div class="circle" id="together2"></div>
+          <script type="text/javascript">
+            setInterval(function() {
+              var circle1 = document.getElementById("together1")
+              var circle2 = document.getElementById("together2")
+
+              var opacity = Math.random() > 0.5 ? 1.0 : 0.0;
+              circle1.style.opacity = opacity
+              circle2.style.opacity = opacity
+            }, 200);
+          </script>
+        </section>
+      </section>
+
+      <section>
+        <h1>The Turn</h1>
+      </section>
+
+      <section>
+        <section>
+          Patterns in space
+        </section>
         <section data-frame-src='lib/app/classify2d.html'>
           <iframe src="" width="465" height="768"></iframe>
         </section>
       </section>
 
       <section>
+        <section>
+          Patterns in hyper-space
+        </section>
+        <section class="full-page">
+          <iframe class="full-page" src="rbm/rbm.html" width="1024" height="768"></iframe>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          Patterns in time
+        </section>
         <section data-frame-src='lib/app/rldemo.html'>
           <iframe src="" width="1024" height="768"></iframe>
         </section>
       </section>
 
       <section>
-        Activations / Parts Models
+        <section>
+          Patterns within patterns
+        </section>
+        <section>
+          "Deep" Learning
+        </section>
+      </section>
+
+      <section>
+        <h1>The Prestige</h1>
       </section>
 
       <section>
         <section>
-          <h1 class="left">Pattern<br>Recognition</h1>
+          Deep Dream
         </section>
-        <section class="full-page">
-          <iframe class="full-page" src="rbm/rbm.html" width="1024" height="768"></iframe>
+        <section>
+          <video src="media/journey.mp4" width="1024" height="720" controls="true">
+          </video>
+        </section>
+        <section>
+          demo
+        </section>
+      </section>
+
+      <section>
+        <section>
+          Deep Reinforcement Learning
+        </section>
+        <section>
+          demo
+        </section>   
+      </section>
+
+      <section>
+        <section>
+          The collision of though an information processing.
+        </section>
+        <section>
+          Conciousness is sufficiently advanced technology.
+        </section>
+        <section>
+          Conciousness is the greatest magic trick there ever was.
+        </section>
+        <section data-background="images/the-prestige.jpg">
+          We are the magician and the audience.
         </section>
       </section>
 
