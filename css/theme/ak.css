@@ -2,9 +2,48 @@
  * AK theme for reveal.js.
  *
  */
-@import url(../../lib/font/league-gothic/league-gothic.css);
-@import url(https://fonts.googleapis.com/css?family=WorkSans:300,400);
-@import url(https://fonts.googleapis.com/css?family=RobotoSlab:100,300,700);
+@font-face {
+  font-family: 'work_sansbold';
+  src: url("../fonts/worksans-bold-webfont.eot");
+  src: url("../fonts/worksans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/worksans-bold-webfont.woff2") format("woff2"), url("../fonts/worksans-bold-webfont.woff") format("woff"), url("../fonts/worksans-bold-webfont.ttf") format("truetype"), url("../fonts/worksans-bold-webfont.svg#work_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'work_sansextralight';
+  src: url("../fonts/worksans-extralight-webfont.eot");
+  src: url("../fonts/worksans-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/worksans-extralight-webfont.woff2") format("woff2"), url("../fonts/worksans-extralight-webfont.woff") format("woff"), url("../fonts/worksans-extralight-webfont.ttf") format("truetype"), url("../fonts/worksans-extralight-webfont.svg#work_sansextralight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'work_sansregular';
+  src: url("../fonts/worksans-regular-webfont.eot");
+  src: url("../fonts/worksans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/worksans-regular-webfont.woff2") format("woff2"), url("../fonts/worksans-regular-webfont.woff") format("woff"), url("../fonts/worksans-regular-webfont.ttf") format("truetype"), url("../fonts/worksans-regular-webfont.svg#work_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'work_sansthin';
+  src: url("../fonts/worksans-thin-webfont.eot");
+  src: url("../fonts/worksans-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/worksans-thin-webfont.woff2") format("woff2"), url("../fonts/worksans-thin-webfont.woff") format("woff"), url("../fonts/worksans-thin-webfont.ttf") format("truetype"), url("../fonts/worksans-thin-webfont.svg#work_sansthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url("../fonts/robotoslab-regular-webfont.eot");
+  src: url("../fonts/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-regular-webfont.woff2") format("woff2"), url("../fonts/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/robotoslab-regular-webfont.ttf") format("truetype"), url("../fonts/robotoslab-regular-webfont.svg#roboto_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_slabbold';
+  src: url("../fonts/robotoslab-bold-webfont.eot");
+  src: url("../fonts/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-bold-webfont.woff2") format("woff2"), url("../fonts/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/robotoslab-bold-webfont.svg#roboto_slabbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -19,7 +58,7 @@ body {
   background-color: #b9c0c6; }
 
 .reveal {
-  font-family: "Work Sans", sans-serif;
+  font-family: "work_sansextralight", sans-serif;
   font-size: 48px;
   font-weight: normal;
   color: #333; }
@@ -45,7 +84,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: "Roboto Slab", serif;
+  font-family: "roboto_slabbold", serif;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: normal;
@@ -288,6 +327,3 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
-
-.reveal {
-  font-weight: 300 !important; }
