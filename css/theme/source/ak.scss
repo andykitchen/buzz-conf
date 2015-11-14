@@ -97,7 +97,7 @@ $mainFont: 'work_sanslight', sans-serif;
 $mainFontSize: 48px;
 $headingFont: 'roboto_slabbold', serif;
 $headingFontWeight: 700;
-$headingTextTransform: capitalize;
+$headingTextTransform: none;
 $mainColor: #333;
 $headingColor: #333;
 $headingTextShadow: none;
@@ -121,3 +121,12 @@ $heading4Size: 1.00em;
 @import "../template/theme";
 // ---------------------------------------------
 
+.dark-bg{
+	color: white;
+	text-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.reveal .dark-bg h1, .reveal .dark-bg h2, .reveal .dark-bg h3, .reveal .dark-bg h4, .reveal .dark-bg h5, .reveal .dark-bg h6 {
+	color: white;
+	text-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
