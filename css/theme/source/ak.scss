@@ -1,0 +1,52 @@
+/**
+ * AK theme for reveal.js.
+ *
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=WorkSans:300,400);
+@import url(https://fonts.googleapis.com/css?family=RobotoSlab:100,300,700);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Work Sans', sans-serif;
+$mainFontSize: 48px;
+$headingFont: 'Roboto Slab', serif;
+$headingFontWeight: 700;
+$headingTextTransform: capitalize;
+$mainColor: #333;
+$headingColor: #333;
+$headingTextShadow: none;
+$backgroundColor: #b9c0c6;
+$linkColor: #8b743d;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+$heading1Size: 2.8125em;
+$heading2Size: 1.5833em;
+$heading3Size: 1.3333em;
+$heading4Size: 1.00em;
+
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(206,215,222,1), rgba(255,255,255,1) );
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal{
+	font-weight: 300 !important; 
+}
