@@ -16,8 +16,28 @@
   
   <script src="rldemo.js"></script>
   <style type="text/css">
-      canvas { border: 1px solid white; }
-    </style>
+      canvas {
+        margin: 0 auto;
+        display: block;
+        padding: 0;
+      }
+      .canvas-holder{
+        margin: 0 auto;
+        display: block;
+        width: 800px;
+      }
+      #vis_canvas, #net_canvas{
+        display: inline-block;
+        float: left;
+      }
+      #vis_canvas{
+        padding-top: 20px;
+      }
+      #net_canvas{
+        padding-left: 20px;
+      }
+
+  </style>
 
  </head>
  <body onload="start();">
@@ -57,16 +77,18 @@ var brain = new deepqlearn.Brain(num_inputs, num_actions, opt); // woohoo
    </textarea>
    <button onclick="reload()" style="width: 200px; height: 30px; margin-top: 5px; display: none">Reload</button>
    
-   <canvas id="vis_canvas" width="350" height="150"></canvas>
-   <canvas id="graph_canvas" width="350" height="150" style="display: none;"></canvas><br />
-   <canvas id="net_canvas" width="700" height="200"></canvas><br />
-
-   <canvas id="canvas" width="700" height="500"></canvas>
+  <div class="canvas-holder">
+    <canvas id="vis_canvas" width="250" height="150"></canvas>
+    <canvas id="net_canvas" width="530" height="200"></canvas>
+  </div> 
+   <canvas id="graph_canvas" width="350" height="150" style="display: none;"></canvas>
+   <canvas id="canvas" width="800" height="500"></canvas>
    <div id="brain_info_div" style="display: none"></div>
    
-   <button onclick="savenet()">Save network to JSON</button>
-   <button onclick="loadnet()">Load network from JSON</button>
-
+<!--     Buttons 
+    <button onclick="savenet()">Save network to JSON</button>
+    <button onclick="loadnet()">Load network from JSON</button>
+ -->
    <!-- <h1>Controls</h1> -->
    <!--
    <button onclick="goveryfast()">Go very fast</button>
