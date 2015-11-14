@@ -112,12 +112,14 @@
       </section>
 
       <section>
-        <section data-frame-src='lib/app/classify2d.html' data-width='465' data-height='768'>
+        <section data-frame-src='lib/app/classify2d.html'>
+          <iframe src="" width="465" height="768"></iframe>
         </section>
       </section>
 
       <section>
-        <section data-frame-src='lib/app/rldemo.html' data-width='1024' data-height='768'>
+        <section data-frame-src='lib/app/rldemo.html'>
+          <iframe src="" width="1024" height="768"></iframe>
         </section>
       </section>
 
@@ -166,15 +168,13 @@
 
       Reveal.addEventListener('slidechanged', function(event) {
         if(event.currentSlide && event.currentSlide.dataset.frameSrc) {
-          var iframe = document.createElement("iframe");
+          var iframe = event.currentSlide.querySelector('iframe')
           iframe.src = event.currentSlide.dataset.frameSrc;
-          iframe.width = event.currentSlide.dataset.width;
-          iframe.height = event.currentSlide.dataset.height;
-          event.currentSlide.appendChild(iframe)
         }
         
         if(event.previousSlide && event.previousSlide.dataset.frameSrc) {
-          event.previousSlide.querySelector('iframe').remove()
+          var iframe = event.previousSlide.querySelector('iframe')
+          iframe.src = "";
         }
       });
 
