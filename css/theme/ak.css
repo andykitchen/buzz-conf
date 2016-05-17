@@ -265,6 +265,12 @@ body {
   text-shadow: none;
   border: none; }
 
+.reveal .dark-bg .a{
+  color: #d9caa7; }
+  
+.reveal .dark-bg a:hover {
+  color: #f2e9d3; }
+
 .reveal .roll span:after {
   color: #fff;
   background: #564826; }
