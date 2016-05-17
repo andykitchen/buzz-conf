@@ -265,12 +265,6 @@ body {
   text-shadow: none;
   border: none; }
 
-.reveal .dark-bg .a{
-  color: #d9caa7; }
-  
-.reveal .dark-bg a:hover {
-  color: #f2e9d3; }
-
 .reveal .roll span:after {
   color: #fff;
   background: #564826; }
@@ -344,6 +338,12 @@ body {
 .dark-bg {
   color: white;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+
+.reveal .dark-bg a {
+  color: #d9caa7; }
+
+.reveal .dark-bg a:hover {
+  color: #f2e9d3; }
 
 .reveal .dark-bg h1, .reveal .dark-bg h2, .reveal .dark-bg h3, .reveal .dark-bg h4, .reveal .dark-bg h5, .reveal .dark-bg h6 {
   color: white;
